@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-matrix-like",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Test if a value is a 2-dimensional ndarray-like object.",
   "license": "Apache-2.0",
   "author": {
