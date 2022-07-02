@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isMatrixLike;
+})();
 })();
 </script>
 ```
@@ -88,6 +90,7 @@ var bool = isMatrixLike( arr );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isMatrixLike( arr );
@@ -102,6 +105,7 @@ out = isMatrixLike( {} );
 out = isMatrixLike( null );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -199,19 +203,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-matrix-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd/tree/umd
 
-[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like/tree/umd
+[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like/tree/umd/tree/umd
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd/tree/umd
 
-[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like/tree/umd
+[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like/tree/umd/tree/umd
 
-[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like/tree/umd
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
