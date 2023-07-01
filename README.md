@@ -24,38 +24,30 @@ limitations under the License.
 
 > Test if a value is 2-dimensional [ndarray][@stdlib/ndarray/ctor]-like object.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-matrix-like
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isMatrixLike = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isMatrixLike = require( 'path/to/vendor/umd/assert-is-matrix-like/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isMatrixLike;
-})();
-</script>
+var isMatrixLike = require( '@stdlib/assert-is-matrix-like' );
 ```
 
 #### isMatrixLike( value )
@@ -80,14 +72,9 @@ var bool = isMatrixLike( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var isMatrixLike = require( '@stdlib/assert-is-matrix-like' );
 
 var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isMatrixLike( arr );
@@ -101,11 +88,6 @@ out = isMatrixLike( {} );
 
 out = isMatrixLike( null );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -199,19 +181,19 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-matrix-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/umd
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
 
-[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like/tree/umd
+[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/umd
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
 
-[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like/tree/umd
+[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like
 
-[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like/tree/umd
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like
 
 <!-- </related-links> -->
 
