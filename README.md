@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@esm/index.mjs';
+import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@v0.1.0-esm/index.mjs';
 ```
 
 #### isMatrixLike( value )
@@ -74,7 +74,7 @@ var bool = isMatrixLike( arr );
 <script type="module">
 
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@esm/index.mjs';
-import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@esm/index.mjs';
+import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@v0.1.0-esm/index.mjs';
 
 var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isMatrixLike( arr );
