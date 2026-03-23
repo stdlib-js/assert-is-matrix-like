@@ -35,32 +35,14 @@ limitations under the License.
 
 > Test if a value is 2-dimensional [ndarray][@stdlib/ndarray/ctor]-like object.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-matrix-like
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isMatrixLike = require( '@stdlib/assert-is-matrix-like' );
+import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@deno/mod.js';
 ```
 
 #### isMatrixLike( value )
@@ -68,7 +50,7 @@ var isMatrixLike = require( '@stdlib/assert-is-matrix-like' );
 Tests if a value is a 2-dimensional [ndarray][@stdlib/ndarray/ctor]-like object.
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 
 var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var bool = isMatrixLike( arr );
@@ -86,8 +68,8 @@ var bool = isMatrixLike( arr );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var ndarray = require( '@stdlib/ndarray-ctor' );
-var isMatrixLike = require( '@stdlib/assert-is-matrix-like' );
+import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+import isMatrixLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-matrix-like@deno/mod.js';
 
 var arr = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 2 ], [ 2, 1 ], 0, 'row-major' );
 var out = isMatrixLike( arr );
@@ -134,7 +116,7 @@ out = isMatrixLike( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -197,19 +179,19 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-matrix-like/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array
+[@stdlib/assert/is-array]: https://github.com/stdlib-js/assert-is-array/tree/deno
 
-[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like
+[@stdlib/assert/is-array-like]: https://github.com/stdlib-js/assert-is-array-like/tree/deno
 
-[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like
+[@stdlib/assert/is-ndarray-like]: https://github.com/stdlib-js/assert-is-ndarray-like/tree/deno
 
-[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like
+[@stdlib/assert/is-typed-array-like]: https://github.com/stdlib-js/assert-is-typed-array-like/tree/deno
 
-[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like
+[@stdlib/assert/is-vector-like]: https://github.com/stdlib-js/assert-is-vector-like/tree/deno
 
 <!-- </related-links> -->
 
