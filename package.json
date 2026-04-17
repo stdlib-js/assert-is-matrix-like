@@ -42,6 +42,7 @@
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.3",
     "@stdlib/ndarray-ctor": "^0.3.1",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-noop": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
